@@ -5,29 +5,29 @@ import java.util.Scanner;
 public class HomeWork1 {
 
 	public static void main(String[] args) {
-		
-		//¿À·»Áö 127°³ 10°³¾¿ ´ãÀ» ¼ö ÀÖ´Â »óÀÚ. 5°³¾¿ ´ãÀ» ¼ö ÀÖ´Â »óÀÚ. ¸î°³ ÇÊ¿äÇÑÁö Ãâ·Â 2°³°¡ ³²À» °æ¿ì 5°³Â¥¸® »óÀÚ·Î
-		
+
+		//ì˜¤ë Œì§€ 127ê°œ 10ê°œì”© ë‹´ì„ ìˆ˜ ìžˆëŠ” ìƒìž. 5ê°œì”© ë‹´ì„ ìˆ˜ ìžˆëŠ” ìƒìž. ëª‡ê°œ í•„ìš”í•œì§€ ì¶œë ¥ 2ê°œê°€ ë‚¨ì„ ê²½ìš° 5ê°œì§œë¦¬ ìƒìžë¡œ
+
 		int orange;
 		int box10;
 		int box5;
 		int result;
-		
+
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("¿À·»Áö °³¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À.");
+
+		System.out.println("ì˜¤ë Œì§€ ê°œìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤.");
 		orange = sc.nextInt();
-		
+
 		box10 = orange/10;
 		result = orange%10;
 		box5 = result/5;
 		result = orange%5;
-		
+
 		if(result>1) {
 			box5 ++;
 		}
-		
-		System.out.printf("¿À·»Áö %d°³´Â 10°³¾¿ ´ãÀ» ¼ö ÀÖ´Â »óÀÚ %d°³, 5°³¾¿ ´ãÀ» ¼ö ÀÖ´Â »óÀÚ %d°³°¡ ÇÊ¿äÇÕ´Ï´Ù.", orange, box10, box5);
+
+		System.out.printf("ì˜¤ë Œì§€ %dê°œëŠ” 10ê°œì”© ë‹´ì„ ìˆ˜ ìžˆëŠ” ìƒìž %dê°œ, 5ê°œì”© ë‹´ì„ ìˆ˜ ìžˆëŠ” ìƒìž %dê°œê°€ í•„ìš”í•©ë‹ˆë‹¤.", orange, box10, box5);
 	}
 
-}
+} 

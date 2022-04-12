@@ -5,32 +5,32 @@ import java.util.Scanner;
 public class HomeWork2 {
 
 	public static void main(String[] args) {
-		
-		// ¿µ¼öÁõ) ¹°°ÇÀÇ °¡°İ°ú Çö±İ ÀÔ·Â¹ŞÀ½
-		// Çö±İ 10000¿ø
-		// ¹°°Ç°¡°İ 7500¿ø (ºÎ°¡¼¼±îÁö Æ÷ÇÔµÈ °¡°İ)
-		// ºÎ°¡¼¼ 750¿ø
-		// ÀÜµ· 2500¿ø
-		
+
+		// ì˜ìˆ˜ì¦) ë¬¼ê±´ì˜ ê°€ê²©ê³¼ í˜„ê¸ˆ ì…ë ¥ë°›ìŒ
+		// í˜„ê¸ˆ 10000ì›
+		// ë¬¼ê±´ê°€ê²© 7500ì› (ë¶€ê°€ì„¸ê¹Œì§€ í¬í•¨ëœ ê°€ê²©)
+		// ë¶€ê°€ì„¸ 750ì›
+		// ì”ëˆ 2500ì›
+
 		int cash;
 		int price;
 		int vat;
 		int result;
-		
+
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Çö±İ ÀÔ·Â");
+
+		System.out.println("í˜„ê¸ˆ ì…ë ¥");
 		cash = sc.nextInt();
-		System.out.println("¹°°Ç°¡°İ ÀÔ·Â");
+		System.out.println("ë¬¼ê±´ê°€ê²© ì…ë ¥");
 		price = sc.nextInt();
 
-		//ºÎ°¡¼¼ ±¸ÇÏ´Â °ø½Ä
+		//ë¶€ê°€ì„¸ êµ¬í•˜ëŠ” ê³µì‹
 		vat = price - (int)(price/1.1);
-		
-		System.out.println("[Çö±İ] " + cash + "¿ø");
-		System.out.println("[¹°°Ç°¡°İ] " + price + "¿ø");
-		System.out.println("[ºÎ°¡¼¼]" + vat + "¿ø");
-		System.out.println("[ÀÜµ·]" + (cash - price) + "¿ø");
+
+		System.out.println("[í˜„ê¸ˆ] " + cash + "ì›");
+		System.out.println("[ë¬¼ê±´ê°€ê²©] " + price + "ì›");
+		System.out.println("[ë¶€ê°€ì„¸]" + vat + "ì›");
+		System.out.println("[ì”ëˆ]" + (cash - price) + "ì›");
 	}
 
 }
